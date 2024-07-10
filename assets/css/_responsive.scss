@@ -186,6 +186,10 @@
   .services {
     margin-bottom: 80px;
 
+    .services_line {
+      display: none;
+    }
+
     .slider_right,
     .slider_left {
       display: none;

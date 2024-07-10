@@ -328,9 +328,17 @@ label {
 }
 .services_title {
   margin-bottom: 40px;
+  position: relative;
 }
 .services_title .main_title {
   max-width: 598px;
+}
+.services_title .services_line {
+  position: absolute;
+  right: -112px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 }
 .services .bg_left {
   position: absolute;
@@ -682,6 +690,9 @@ label {
   }
   .services {
     margin-bottom: 80px;
+  }
+  .services .services_line {
+    display: none;
   }
   .services .slider_right,
   .services .slider_left {

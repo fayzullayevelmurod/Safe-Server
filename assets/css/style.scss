@@ -432,9 +432,18 @@ label {
 
   &_title {
     margin-bottom: 40px;
+    position: relative;
 
     .main_title {
       max-width: 598px;
+    }
+
+    .services_line {
+      position: absolute;
+      right: -112px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
     }
   }
 
