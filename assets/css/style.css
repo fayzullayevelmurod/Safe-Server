@@ -196,22 +196,71 @@ label {
   display: flex;
   gap: 11px;
 }
+.tarif_img {
+  height: 100%;
+  flex-shrink: 0;
+}
+.tarif_img img {
+  height: 100%;
+}
+.tarif_img .tarif_line_table_img {
+  display: none;
+}
+.tarif .main_title {
+  margin-bottom: 40px;
+  max-width: 578px;
+  margin-left: auto;
+}
 .tarif_wrapper {
-  border: 1px solid red;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
+.tarif_in {
+  width: 100%;
+}
 .tarif_card {
+  text-align: center;
   width: calc(33.3333333333% - 14px);
   border-radius: 20px;
   background: #5D1F70;
+  transition: 0.3s ease;
+}
+.tarif_card:hover {
+  background: #854798;
+}
+.tarif .month {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #EBEBEB;
+  padding: 10px;
+}
+.tarif_center {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarif h6 {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #121420;
+}
+.tarif h6 span {
+  display: block;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.65px;
+  color: #505050;
 }
 .tarif_content {
   background: #000;
-  margin: 0 4px;
+  margin: 4px;
   background: #EBEBEB;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 15px 15px;
   padding: 11px;
 }
 
@@ -302,6 +351,27 @@ label {
   .header .main_btn_white {
     margin-left: 46px;
   }
+  .tarif_center {
+    padding: 20px 0;
+  }
+  .tarif .main_container {
+    gap: 20px;
+  }
+  .tarif .main_title {
+    max-width: 440px;
+  }
+  .tarif_img .tarif_line_img {
+    display: none;
+  }
+  .tarif_img .tarif_line_table_img {
+    display: block;
+  }
+  .tarif .main_btn {
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 12px 15px;
+  }
   .footer_line_img {
     right: -30px;
   }
@@ -321,6 +391,12 @@ label {
   .header .burger_btn {
     display: flex;
   }
+  .tarif_img {
+    display: none;
+  }
+  .tarif .main_title {
+    margin-left: 0;
+  }
   .footer {
     margin-top: 80px;
   }
@@ -335,6 +411,33 @@ label {
   }
 }
 @media only screen and (max-width: 768px) {
+  .tarif_wrapper {
+    flex-direction: column;
+  }
+  .tarif_card {
+    width: 100%;
+  }
+  .tarif .month {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .tarif_center {
+    padding: 7px 0 20px 0;
+  }
+  .tarif_content {
+    padding: 9px;
+  }
+  .tarif h6 {
+    font-size: 40px;
+    line-height: 58px;
+  }
+  .tarif span {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .tarif .main_btn {
+    padding: 12px 20px;
+  }
   .footer {
     margin-top: 40px;
   }

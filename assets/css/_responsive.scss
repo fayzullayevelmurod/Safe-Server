@@ -21,6 +21,37 @@
     }
   }
 
+  .tarif {
+    &_center {
+      padding: 20px 0;
+    }
+
+    .main_container {
+      gap: 20px;
+    }
+
+    .main_title {
+      max-width: 440px;
+    }
+
+    &_img {
+      .tarif_line_img {
+        display: none;
+      }
+
+      .tarif_line_table_img {
+        display: block;
+      }
+    }
+
+    .main_btn {
+      white-space: nowrap;
+      font-size: 17px;
+      line-height: 24px;
+      padding: 12px 15px;
+    }
+  }
+
   .footer {
     &_line_img {
       right: -30px;
@@ -53,6 +84,16 @@
     }
   }
 
+  .tarif {
+    &_img {
+      display: none;
+    }
+
+    .main_title {
+      margin-left: 0;
+    }
+  }
+
   .footer {
     margin-top: 80px;
 
@@ -71,6 +112,44 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .tarif {
+    &_wrapper {
+      flex-direction: column;
+    }
+
+    &_card {
+      width: 100%;
+    }
+
+    .month {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    &_center {
+      padding: 7px 0 20px 0;
+    }
+
+    &_content {
+      padding: 9px;
+    }
+
+    h6 {
+      font-size: 40px;
+      line-height: 58px;
+    }
+
+    span {
+      font-size: 15px;
+      line-height: 21px;
+    }
+
+    .main_btn {
+      padding: 12px 20px;
+    }
+  }
+
   .footer {
     margin-top: 40px;
 
