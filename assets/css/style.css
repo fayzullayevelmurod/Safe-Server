@@ -192,6 +192,41 @@ label {
   display: none;
 }
 
+.home_left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home h1 {
+  max-width: 495px;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  color: #EBEBEB;
+}
+.home p {
+  max-width: 392px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.65px;
+  color: #EBEBEB;
+}
+.home .main_btn {
+  max-width: 214px;
+}
+.home_social {
+  margin-top: 57px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.home_social a svg path {
+  transition: 0.3s ease;
+}
+.home_social a:hover svg path {
+  fill: #AD6FC0;
+}
+
 .tarif .main_container {
   display: flex;
   gap: 11px;

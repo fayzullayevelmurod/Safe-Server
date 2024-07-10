@@ -266,6 +266,58 @@ label {
 // header
 
 
+// home
+.home {
+  &_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1 {
+    max-width: 495px;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 72px;
+    color: $color-white;
+  }
+
+  p {
+    max-width: 392px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24.65px;
+    color: $color-white;
+  }
+
+  .main_btn {
+    max-width: 214px;
+  }
+
+  &_social {
+    margin-top: 57px;
+    @include flex-center();
+    gap: 20px;
+
+    a {
+      svg {
+        path {
+          @include transition();
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: $color-pink-light;
+          }
+        }
+      }
+    }
+  }
+}
+// home
+
 // tarif
 .tarif {
   .main_container {
