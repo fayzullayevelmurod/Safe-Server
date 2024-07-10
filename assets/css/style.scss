@@ -183,6 +183,7 @@ label {
 .menu_bg {
   position: fixed;
   top: 0;
+  z-index: 3;
   left: -100%;
   width: 100%;
   height: 100%;
@@ -193,11 +194,12 @@ label {
     position: absolute;
     top: 17px;
     right: 20px;
-    z-index: 3;
+    z-index: 5;
   }
 
   .menu_link {
     position: absolute;
+    z-index: 4;
     top: 0;
     right: 0;
     width: 190px;
@@ -264,12 +266,60 @@ label {
 // header
 
 
+// tarif
+.tarif {
+  .main_container {
+    display: flex;
+    gap: 11px;
+  }
+
+  &_wrapper {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &_card {
+    width: calc(100% / 3 - 14px);
+    border-radius: 20px;
+    background: $color-pink-dark;
+  }
+
+  &_content {
+    background: #000;
+    margin: 0 4px;
+    background: $color-white;
+    border-radius: 0 0 20px 20px;
+    padding: 11px;
+  }
+}
+// tarif
 
 // footer
 .footer {
+  margin-top: 150px;
+
+  &_bottom {
+    margin-top: 150px;
+    padding: 20px 0;
+    background: #000000;
+    .main_container {
+      @include flex-full-center();
+    }
+  }
 
   .main_title {
     margin-bottom: 40px;
+  }
+
+  .main_container {
+    position: relative;
+  }
+
+  &_line_img {
+    position: absolute;
+    right: 0;
   }
 
   &_link {
@@ -314,11 +364,17 @@ label {
       color: $color-dividers;
     }
 
-    a, h6 {
+    a {
+      max-width: 392px;
       font-size: 20px;
       font-weight: 300;
       line-height: 29px;
       color: $color-white;
+      @include transition();
+
+      &:hover {
+        color: $color-pink-light;
+      }
     }
   }
 }
