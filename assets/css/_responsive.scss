@@ -21,6 +21,40 @@
     }
   }
 
+  .home {
+
+    &_left {
+      .home_line_desktop {
+        display: none;
+      }
+  
+      .home_line_table {
+        display: block;
+      }
+    }
+
+    &_right {
+      .home_block {
+        height: 174px;
+
+        .home_block_img {
+          top: -2px;
+          right: -33px;
+        }
+      }
+  
+      .home_end_block {
+        height: 174px;
+
+        .home_block_img {
+          right: -35px;
+          bottom: -35px;
+        }
+      }
+    }
+    
+  }
+
   .tarif {
     &_center {
       padding: 20px 0;
@@ -74,6 +108,7 @@
   }
 
   .header {
+    margin: 20px 0 40px 0;
 
     &_link {
       display: none;
@@ -81,6 +116,62 @@
 
     .burger_btn {
       display: flex;
+    }
+  }
+
+  .home {
+    margin-bottom: 80px;
+
+    h1 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &_left {
+      padding-top: 0;
+
+      .home_line1,
+      .home_line2 {
+        display: none;
+      }
+    }
+
+    &_right {
+      .home_block {
+        width: calc(100%);
+        height: 151px;
+
+        .home_block_img {
+          top: -25px;
+          right: -15px;
+        }
+      }
+
+      .home_desktop_block {
+        display: none;
+      }
+    }
+
+    &_social {
+      margin-top: 49px;
+    }
+
+    &_blocks {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      .home_end_block {
+        .home_block_img {
+          bottom: -48px;
+          right: -100px;
+        }
+      }
+
+      .home_media_block {
+        height: 151px;
+        width: calc(100% / 2 - 10px);
+      }
     }
   }
 
@@ -111,7 +202,74 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+
+  .home {
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 21px;
+      max-width: 100%;
+    }
+
+    &_in {
+      gap: 20px;
+    }
+
+    &_right {
+      .home_block {
+        height: 134px;
+
+        span {
+          font-size: 15px;
+          line-height: 21.75px;
+        }
+
+        h6 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    &_social {
+      display: none;
+    }
+
+    .main_btn {
+      max-width: 100%;
+    }
+
+    &_blocks {
+      flex-direction: column-reverse;
+      margin-top: 0;
+
+      .home_media_block {
+        height: 134px;
+        width: calc(100%);
+
+        img {
+          display: none;
+        }
+
+        span {
+          font-size: 15px;
+          line-height: 21.75px;
+        }
+
+        h6 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
 
   .tarif {
     &_wrapper {
