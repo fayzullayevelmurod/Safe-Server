@@ -19,3 +19,26 @@ menu_bg.addEventListener("click", () => {
   menu_link.classList.remove("active");
 });
 // burger
+
+
+var swiper = new Swiper(".servicesSwiper", {
+  slidesPerView: 1.20,
+  spaceBetween: 20,
+  initialSlide: 3,
+  loop: true,
+  navigation: {
+    nextEl: ".services-button-next",
+    prevEl: ".services-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.60,
+    },
+    993: {
+      slidesPerView: 2,
+    },
+    1300: {
+      slidesPerView: 4,
+    }
+  },
+});

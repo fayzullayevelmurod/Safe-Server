@@ -103,6 +103,7 @@ address {
   font-weight: 300;
   line-height: 48px;
   color: #EBEBEB;
+  text-transform: uppercase;
 }
 
 h1,
@@ -322,6 +323,97 @@ label {
   fill: #AD6FC0;
 }
 
+.services {
+  margin-bottom: 150px;
+}
+.services_title {
+  margin-bottom: 40px;
+}
+.services_title .main_title {
+  max-width: 598px;
+}
+.services .bg_left {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  transform: translateX(-100%);
+  background: #121420;
+  opacity: 0.8;
+  z-index: 2;
+}
+.services .bg_right {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  transform: translateX(100%);
+  background: #121420;
+  opacity: 0.8;
+  z-index: 2;
+}
+.services_slider {
+  position: relative;
+}
+.services_slider .slider_btn {
+  position: absolute;
+  z-index: 2;
+}
+.services_slider .slider_left {
+  left: -25px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.services_slider .slider_right {
+  right: -25px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.services .servicesSwiper {
+  overflow: visible;
+}
+.services .swiper-wrapper {
+  align-items: stretch;
+}
+.services .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+.services_card {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid #854798;
+}
+.services_card img {
+  width: 100%;
+}
+.services_card_content {
+  padding: 20px 20px 42px 20px;
+  background: #EBEBEB;
+  height: 100%;
+}
+.services_card h6 {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.65px;
+  margin-bottom: 8px;
+  color: #121420;
+  text-transform: uppercase;
+}
+.services_card p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.65px;
+  color: #505050;
+}
+
 .tarif .main_container {
   display: flex;
   gap: 11px;
@@ -501,6 +593,9 @@ label {
     right: -35px;
     bottom: -35px;
   }
+  .services_card_content {
+    padding: 20px;
+  }
   .tarif_center {
     padding: 20px 0;
   }
@@ -585,6 +680,19 @@ label {
     height: 151px;
     width: calc(50% - 10px);
   }
+  .services {
+    margin-bottom: 80px;
+  }
+  .services .slider_right,
+  .services .slider_left {
+    display: none;
+  }
+  .services .swiper-slide {
+    opacity: 0.4;
+  }
+  .services .swiper-slide-active {
+    opacity: 1;
+  }
   .tarif_img {
     display: none;
   }
@@ -655,6 +763,16 @@ label {
   .home_blocks .home_media_block h6 {
     font-size: 28px;
     line-height: 40px;
+  }
+  .services {
+    margin-bottom: 24px;
+  }
+  .services_title {
+    margin-bottom: 20px;
+  }
+  .services_card h6, .services_card p {
+    font-size: 15px;
+    line-height: 21px;
   }
   .tarif_wrapper {
     flex-direction: column;

@@ -55,6 +55,14 @@
     
   }
 
+  .services {
+    &_card {
+      &_content {
+        padding: 20px;
+      }
+    }
+  }
+
   .tarif {
     &_center {
       padding: 20px 0;
@@ -175,6 +183,23 @@
     }
   }
 
+  .services {
+    margin-bottom: 80px;
+
+    .slider_right,
+    .slider_left {
+      display: none;
+    }
+
+    .swiper-slide {
+      opacity: .4;
+    }
+
+    .swiper-slide-active {
+      opacity: 1;
+    }
+  }
+
   .tarif {
     &_img {
       display: none;
@@ -267,6 +292,21 @@
           font-size: 28px;
           line-height: 40px;
         }
+      }
+    }
+  }
+
+  .services {
+    margin-bottom: 24px;
+
+    &_title {
+      margin-bottom: 20px;
+    }
+
+    &_card {
+      h6, p {
+        font-size: 15px;
+        line-height: 21px;
       }
     }
   }

@@ -157,7 +157,7 @@ address {
     font-weight: 300;
     line-height: 48px;
     color: $color-white;
-    
+    text-transform: uppercase;
   }
 }
 
@@ -425,6 +425,114 @@ label {
   }
 }
 // home
+
+// services
+.services {
+  margin-bottom: 150px;
+
+  &_title {
+    margin-bottom: 40px;
+
+    .main_title {
+      max-width: 598px;
+    }
+  }
+
+  .bg_left {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    transform: translateX(-100%);
+    background: $color-black;
+    opacity: 0.8;    
+    z-index: 2;
+  }
+
+  .bg_right {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    transform: translateX(100%);
+    background: $color-black;
+    opacity: 0.8;    
+    z-index: 2;
+  }
+
+  &_slider {
+    position: relative;
+
+
+    .slider_btn {
+      position: absolute;
+      z-index: 2;
+    }
+
+    .slider_left {
+      left: -25px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+
+    .slider_right {
+      right: -25px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+  }
+
+  .servicesSwiper {
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    align-items: stretch;
+
+    .swiper-slide {
+      height: auto;
+    }
+  }
+
+  &_card {
+    user-select: none;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px solid $color-pink;
+
+    img {
+      width: 100%;
+    }
+
+    &_content {
+      padding: 20px 20px 42px 20px;
+      background: $color-white;
+      height: 100%;
+    }
+
+    h6 {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 24.65px;
+      margin-bottom: 8px;
+      color: $color-black;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 24.65px;
+      color: $color-dividers;
+    }
+  }
+}
+// services
 
 // tarif
 .tarif {
