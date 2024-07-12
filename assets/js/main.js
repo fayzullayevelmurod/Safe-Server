@@ -1,6 +1,3 @@
-
-
-
 var swiper = new Swiper(".servicesSwiper", {
   slidesPerView: 1.20,
   spaceBetween: 20,

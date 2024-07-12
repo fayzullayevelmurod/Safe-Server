@@ -1,11 +1,11 @@
 // fonts
-@font-face {  font-family: "Garet-Book"; 
-  src: 
+@font-face {  font-family: "Garet-Book";
+  src:
     url("../fonts/Garet/Garet-Book.otf") format("otf"),
-    url("../fonts/Garet/Garet-Book.ttf") format("ttf"), 
+    url("../fonts/Garet/Garet-Book.ttf") format("ttf"),
     url("../fonts/Garet/Garet-Book.woff") format("woff"),
     url("../fonts/Garet/Garet-Book.woff2") format("woff2");
-  font-style: normal; 
+  font-style: normal;
   font-weight: normal;
   font-display: swap;
 }
@@ -137,7 +137,7 @@ address {
         border: 1px solid transparent;
         background: $color-pink-light;
       }
-  
+
       &:active {
         border: 1px solid transparent;
         background: $color-pink-dark;
@@ -251,6 +251,7 @@ label {
     margin: 0;
     padding: 0;
     flex-shrink: 0;
+    box-shadow: none;
   }
 
   .btn-close {
@@ -529,7 +530,7 @@ label {
     width: 100vw;
     transform: translateX(-100%);
     background: $color-black;
-    opacity: 0.8;    
+    opacity: 0.8;
     z-index: 2;
   }
 
@@ -541,7 +542,7 @@ label {
     width: 100vw;
     transform: translateX(100%);
     background: $color-black;
-    opacity: 0.8;    
+    opacity: 0.8;
     z-index: 2;
   }
 
@@ -663,9 +664,9 @@ label {
 
     &:hover {
       background: $color-pink;
-    }    
+    }
   }
-  
+
   .month {
     font-size: 20px;
     font-weight: 300;

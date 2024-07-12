@@ -178,6 +178,7 @@ label {
   margin: 0;
   padding: 0;
   flex-shrink: 0;
+  box-shadow: none;
 }
 .header .btn-close {
   flex-shrink: 0;
