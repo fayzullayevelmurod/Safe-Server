@@ -24,37 +24,68 @@
     <div class="wrapper">
         <!-- header -->
         <header class="header">
-            <div class="main_container d-flex align-items-center justify-content-between">
-                <a href="/" class="header_logo">
-                    <img src="./assets/images/logo/header_logo.svg" alt="">
-                </a>
-                <ul class="header_link">
-                    <button class="menu_close">
-                        <img src="./assets/images/icons/burger-close.svg" alt="">
+            <nav class="navbar">
+                <div class="main_container">
+                    <a href="/" class="header_logo navbar-brand">
+                        <img src="./assets/images/logo/header_logo.svg" alt="">
+                    </a>
+                    <div class=" navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#services_section">
+                                    Продукты
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tarif_section">
+                                    Тарифы
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact_section">
+                                    Контакты
+                                </a>
+                            </li>
+                            <button class="main_btn_white">
+                                Арендовать
+                            </button>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                    
+                    data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+                    >
+                        <img src="./assets/images/icons/burger_icon.svg" alt="">
                     </button>
-                    <li class="header_item">
-                        <a href="#services_section">
-                            Продукты
-                        </a>
-                    </li>
-                    <li class="header_item">
-                        <a href="#tarif_section">
-                            Тарифы
-                        </a>
-                    </li>
-                    <li class="header_item">
-                        <a href="#contact_section">
-                            Контакты
-                        </a>
-                    </li>
-                    <button class="main_btn_white">
-                        Арендовать
-                    </button>
-                </ul>
-                <button class="burger_btn">
-                    <img src="./assets/images/icons/burger_icon.svg" alt="">
-                </button>
-            </div>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <img src="./assets/images/icons/burger-close.svg" alt="">
+                        </button>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#services_section">
+                                        Продукты
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tarif_section">
+                                        Тарифы
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact_section">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <button class="main_btn_white">
+                                    Арендовать
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         <!-- header -->
 
@@ -598,9 +629,7 @@
         <!-- footer -->
     </div>
 
-
     <!-- bootstrap -->
-    <!-- <link rel="stylesheet" href="./assets/js/bootstrap.min.js"> -->
     <script src="./assets/js/bootstrap.min.js"></script>
     <!-- bootstrap -->
     <!-- swiper -->

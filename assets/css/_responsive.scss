@@ -106,6 +106,10 @@
     display: none;
   }
 
+  .navbar-toggler {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 993px) {
@@ -124,6 +128,12 @@
       top: 17px;
       right: 20px;
       z-index: 5;
+    }
+
+    .navbar-collapse {
+      .navbar-nav {
+        display: none;
+      }
     }
 
     &_link {

@@ -1,11 +1,9 @@
 @font-face {
-  font-family: "Bahnschrift";
-  src: url("../fonts/Bahnschrift/Bahnschrift.ttf");
-}
-@font-face {
   font-family: "Garet-Book";
-  src: url("../fonts/Garet/Garet-Book.ttf");
-  font-weight: 300;
+  src: url("../fonts/Garet/Garet-Book.otf") format("otf"), url("../fonts/Garet/Garet-Book.ttf") format("ttf"), url("../fonts/Garet/Garet-Book.woff") format("woff"), url("../fonts/Garet/Garet-Book.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
 * {
   margin: 0;
@@ -141,6 +139,93 @@ label {
 }
 .header .main_btn_white {
   margin-left: 130px;
+}
+.header .navbar-brand {
+  flex-shrink: 0;
+  padding: 0;
+  width: 149px;
+}
+.header .main_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.header .offcanvas-backdrop.show {
+  background: rgba(93, 31, 112, 0.9);
+}
+.header .offcanvas {
+  padding: 97px 20px 20px 20px;
+  background: #5D1F70;
+}
+.header .offcanvas-body {
+  padding: 0;
+}
+.header .offcanvas.offcanvas-end {
+  width: 190px;
+}
+.header .offcanvas-backdrop.show {
+  opacity: 0.7;
+}
+.header .navbar-toggler {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+.header .btn-close {
+  flex-shrink: 0;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  opacity: 1;
+}
+.header .btn-close:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.header .navbar-collapse {
+  display: flex;
+}
+.header .navbar-collapse .navbar-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.header .navbar-collapse .navbar-nav .main_btn_white {
+  margin: 0 0 0 20px;
+}
+.header .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header .navbar-nav .main_btn_white {
+  margin: 20px 0 0 0;
+}
+.header .nav-link {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.65px;
+  color: #EBEBEB;
+  padding: 0;
+  transition: 0.3s ease;
+}
+.header .nav-link:hover {
+  color: #AD6FC0;
 }
 .header_link {
   display: flex;
@@ -611,6 +696,9 @@ label {
   .menu_bg {
     display: none;
   }
+  .navbar-toggler {
+    display: none;
+  }
 }
 @media only screen and (max-width: 993px) {
   .main_container {
@@ -625,6 +713,9 @@ label {
     top: 17px;
     right: 20px;
     z-index: 5;
+  }
+  .header .navbar-collapse .navbar-nav {
+    display: none;
   }
   .header_link {
     position: fixed;
