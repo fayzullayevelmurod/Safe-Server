@@ -204,6 +204,10 @@ label {
 
   .main_btn_white {
     margin-left: 130px;
+
+    &:hover {
+      color: $color-white;
+    }
   }
 
   .navbar-brand {
@@ -255,6 +259,7 @@ label {
   }
 
   .btn-close {
+    display: none;
     flex-shrink: 0;
     position: absolute;
     top: 17px;
@@ -318,10 +323,6 @@ label {
     gap: 20px;
   }
 
-  .menu_close {
-    display: none;
-  }
-
   a {
     font-size: 17px;
     font-weight: 300;
@@ -332,10 +333,6 @@ label {
     &:hover {
       color: $color-pink-light;
     }
-  }
-
-  .burger_btn {
-    display: none;
   }
 }
 // header

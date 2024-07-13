@@ -140,6 +140,9 @@ label {
 .header .main_btn_white {
   margin-left: 130px;
 }
+.header .main_btn_white:hover {
+  color: #EBEBEB;
+}
 .header .navbar-brand {
   flex-shrink: 0;
   padding: 0;
@@ -181,6 +184,7 @@ label {
   box-shadow: none;
 }
 .header .btn-close {
+  display: none;
   flex-shrink: 0;
   position: absolute;
   top: 17px;
@@ -233,9 +237,6 @@ label {
   align-items: center;
   gap: 20px;
 }
-.header .menu_close {
-  display: none;
-}
 .header a {
   font-size: 17px;
   font-weight: 300;
@@ -245,9 +246,6 @@ label {
 }
 .header a:hover {
   color: #AD6FC0;
-}
-.header .burger_btn {
-  display: none;
 }
 
 .home {
@@ -715,8 +713,22 @@ label {
     right: 20px;
     z-index: 5;
   }
+  .header .navbar-collapse {
+    display: flex;
+    align-items: start;
+  }
   .header .navbar-collapse .navbar-nav {
-    display: none;
+    height: 100%;
+    padding: 97px 20px 20px 20px;
+    background: #5D1F70;
+    flex-direction: column;
+    align-items: start;
+  }
+  .header .navbar-collapse .navbar-nav .main_btn_white {
+    margin: 20px 0 0 0;
+  }
+  .header .btn-close {
+    display: flex;
   }
   .header_link {
     position: fixed;

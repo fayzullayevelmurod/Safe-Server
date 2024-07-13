@@ -27,7 +27,7 @@
       .home_line_desktop {
         display: none;
       }
-  
+
       .home_line_table {
         display: block;
       }
@@ -42,7 +42,7 @@
           right: -33px;
         }
       }
-  
+
       .home_end_block {
         height: 174px;
 
@@ -52,7 +52,7 @@
         }
       }
     }
-    
+
   }
 
   .services {
@@ -131,9 +131,24 @@
     }
 
     .navbar-collapse {
+      display: flex;
+      align-items: start;
+
       .navbar-nav {
-        display: none;
+        height: 100%;
+        padding: 97px 20px 20px 20px;
+        background: $color-pink-dark;
+        flex-direction: column;
+        align-items: start;
+
+        .main_btn_white {
+          margin: 20px 0 0 0;
+        }
       }
+    }
+
+    .btn-close {
+      display: flex;
     }
 
     &_link {
@@ -151,19 +166,19 @@
         height: 100%;
         background: $color-pink-dark;
         @include transition();
-    
+
         a {
           font-size: 15px;
           font-weight: 300;
           line-height: 21.75px;
           color: $color-white;
           @include transition();
-    
+
           &:hover {
             color: $color-pink;
           }
         }
-    
+
         .main_btn_white {
           margin-left: 0;
           margin-top: 20px;

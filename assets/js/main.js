@@ -1,3 +1,16 @@
+
+let offcanvas = document.querySelector('.offcanvas-collapse');
+let btnclose = document.querySelector('.btn-close');
+
+btnclose.addEventListener('click', () => {
+  offcanvas.classList.remove('open')
+})
+
+offcanvas.addEventListener('click', () => {
+  offcanvas.classList.remove('open')
+})
+
+
 var swiper = new Swiper(".servicesSwiper", {
   slidesPerView: 1.20,
   spaceBetween: 20,
